@@ -1,0 +1,19 @@
+<h1>Hello</h1>
+
+<app-abc [title]="title"></app-abc><br>
+
+
+<h2 appCustomDirective>{{"abubakar"| reversePipe}}</h2>
+
+<input type="text" [(ngModel)]="name">
+<h2>{{name}}</h2>
+
+<button (click)="doToggle()">Toggle</button>
+
+<h2 *ngIf="show">Hello</h2>
+
+<a routerLink="/abc">Abc Component</a><br><br>
+<a [routerLink]="['/xyz']"> XYZ Component</a><br><br>
+<a [routerLink]="['/users/:id/:id1']"> USERS Component</a><br><br>
+
+<router-outlet></router-outlet>
